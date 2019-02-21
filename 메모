@@ -1,0 +1,237 @@
+2019-02-12 16:42:06.522 17188-17188/com.mom.piggy D/ViewRootImpl@9c5ba40[Activity_ChatRoom]: Relayout returned: old=[0,0][1440,2560] new=[0,0][1440,2560] result=0x1 surface={valid=false 0} changed=false
+2019-02-12 16:42:06.527 17188-17188/com.mom.piggy I/TEST: requestCode : 301 resultCode : -1 data : Intent { dat=content://com.android.providers.downloads.documents/document/5405 flg=0x1 }
+2019-02-12 16:42:06.527 17188-17188/com.mom.piggy D/Activity_ChatRoom: uri : content://com.android.providers.downloads.documents/document/5405
+2019-02-12 16:42:06.528 17188-17188/com.mom.piggy D/Activity_ChatRoom: uri.getSecheme : content
+2019-02-12 16:42:06.533 17188-17188/com.mom.piggy D/Activity_ChatRoom: getPath, isDownloadsDocument
+2019-02-12 16:42:06.533 17188-17188/com.mom.piggy D/Activity_ChatRoom: id : 5405
+2019-02-12 16:42:06.533 17188-17188/com.mom.piggy D/Activity_ChatRoom: oreo
+2019-02-12 16:42:06.560 17188-17188/com.mom.piggy D/Activity_ChatRoom: what is return? : null
+
+----------------------
+2/14
+
+샤오미
+
+네트워크상황이 와이파이에서 주로 오류가 많이 생기더라.
+
+와이파이에서 lte 로 전환될떄  데이터를 받는 시간소요가 1분정도 걸린다. 그텀이 길다..
+(소켓 부분)
+
+
+백그라운드로 전환되었을 경우( 윤희철씨 이 증상 ) 
+
+2/15
+
+첨부파일 전체, 뱃지 ,결제테스트서버 apk 추출 전달
+o dialog with id 0 was ever shown via Activity#showDialog
+
+
+
+-----------------------------------
+
+2019-02-13 10:18:50.639 9138-9160/com.mom.piggy W/System.err: java.net.SocketTimeoutException: timeout
+2019-02-13 10:18:50.642 9138-9160/com.mom.piggy W/System.err:     at com.android.okhttp.okio.Okio$3.newTimeoutException(Okio.java:221)
+2019-02-13 10:18:50.642 9138-9160/com.mom.piggy W/System.err:     at com.android.okhttp.okio.AsyncTimeout.exit(AsyncTimeout.java:250)
+2019-02-13 10:18:50.642 9138-9160/com.mom.piggy W/System.err:     at com.android.okhttp.okio.AsyncTimeout$2.read(AsyncTimeout.java:217)
+2019-02-13 10:18:50.643 9138-9160/com.mom.piggy W/System.err:     at com.android.okhttp.okio.RealBufferedSource.read(RealBufferedSource.java:60)
+2019-02-13 10:18:50.643 9138-9160/com.mom.piggy W/System.err:     at com.android.okhttp.internal.http.Http1xStream$ChunkedSource.read(Http1xStream.java:638)
+2019-02-13 10:18:50.643 9138-9160/com.mom.piggy W/System.err:     at com.android.okhttp.okio.RealBufferedSource$1.read(RealBufferedSource.java:396)
+2019-02-13 10:18:50.643 9138-9160/com.mom.piggy W/System.err:     at java.util.zip.InflaterInputStream.fill(InflaterInputStream.java:250)
+2019-02-13 10:18:50.643 9138-9160/com.mom.piggy W/System.err:     at java.util.zip.InflaterInputStream.read(InflaterInputStream.java:163)
+2019-02-13 10:18:50.643 9138-9160/com.mom.piggy W/System.err:     at java.util.zip.GZIPInputStream.read(GZIPInputStream.java:118)
+2019-02-13 10:18:50.644 9138-9160/com.mom.piggy W/System.err:     at java.io.FilterInputStream.read(FilterInputStream.java:107)
+2019-02-13 10:18:50.644 9138-9160/com.mom.piggy W/System.err:     at org.jsoup.helper.DataUtil.readToByteBuffer(DataUtil.java:158)
+2019-02-13 10:18:50.644 9138-9160/com.mom.piggy W/System.err:     at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:618)
+2019-02-13 10:18:50.644 9138-9160/com.mom.piggy W/System.err:     at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:540)
+2019-02-13 10:18:50.644 9138-9160/com.mom.piggy W/System.err:     at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:227)
+2019-02-13 10:18:50.644 9138-9160/com.mom.piggy W/System.err:     at org.jsoup.helper.HttpConnection.get(HttpConnection.java:216)
+2019-02-13 10:18:50.644 9138-9160/com.mom.piggy W/System.err:     at com.lib.shi.messenger.HMMessengerActivity.getMarketVersion(HMMessengerActivity.java:568)
+2019-02-13 10:18:50.645 9138-9160/com.mom.piggy W/System.err:     at com.lib.shi.messenger.HMMessengerActivity$1.run(HMMessengerActivity.java:322)
+
+
+2019-02-13 10:19:10.419 9138-9177/com.mom.piggy E/MOAAPI: Attempt to invoke virtual method 'int java.io.InputStream.read(byte[])' on a null object reference
+2019-02-13 10:19:10.419 9138-9177/com.mom.piggy E/AVEAPP:  Fragment_Main onMOAError: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.io.InputStream.read(byte[])' on a null object reference
+2019-02-13 10:19:10.420 9138-9177/com.mom.piggy E/AVEAPP:  Fragment_Main onMOAError DATA!!: ptGroup=0x00010000, ptCommand=0x00010001
+    body={"result":"success","ptCommand":65537,"ptGroup":65536,"params":{"sessionData":"5473035004a4bfda1c8838e59921a444","mobile_push_noti_type":"1","use_pc_push":"1","profile_image_type":"0","userIdKey":"43baeae7887a336d0f882878f37ae468","mobile_push_sound":"wave.wav","pc_push_noti_type":"1","use_mobile_push":"1","clear_buddy":"0","branchName":"","use_web_push":"1","realUserName":"43439620","profile_subject":"1","userName":"윤희철","userId":"43439620","profile_image":"","user_type":"0","riskType":"0","hana_push_agree":"1","tel":"01051667286","candleUserType":"UT_ME_JU","marketing_agree":"0","web_push_noti_type":"1","email":"grandtempler@naver.com"},"ptDevice":"","config":[]}
+2019-02-13 10:19:10.421 9138-9177/com.mom.piggy E/DefaultTag: [onMOALogin] result : {"result":"success","ptCommand":65537,"ptGroup":65536,"params":{"sessionData":"5473035004a4bfda1c8838e59921a444","mobile_push_noti_type":"1","use_pc_push":"1","profile_image_type":"0","userIdKey":"43baeae7887a336d0f882878f37ae468","mobile_push_sound":"wave.wav","pc_push_noti_type":"1","use_mobile_push":"1","clear_buddy":"0","branchName":"","use_web_push":"1","realUserName":"43439620","profile_subject":"1","userName":"윤희철","userId":"43439620","profile_image":"","user_type":"0","riskType":"0","hana_push_agree":"1","tel":"01051667286","candleUserType":"UT_ME_JU","marketing_agree":"0","web_push_noti_type":"1","email":"grandtempler@naver.com"},"ptDevice":"","config":[]}
+2019-02-13 10:19:10.422 9138-9177/com.mom.piggy E/AVEAPP: [afterLogin] result : {"result":"success","ptCommand":65537,"ptGroup":65536,"params":{"sessionData":"5473035004a4bfda1c8838e59921a444","mobile_push_noti_type":"1","use_pc_push":"1","profile_image_type":"0","userIdKey":"43baeae7887a336d0f882878f37ae468","mobile_push_sound":"wave.wav","pc_push_noti_type":"1","use_mobile_push":"1","clear_buddy":"0","branchName":"","use_web_push":"1","realUserName":"43439620","profile_subject":"1","userName":"윤희철","userId":"43439620","profile_image":"","user_type":"0","riskType":"0","hana_push_agree":"1","tel":"01051667286","candleUserType":"UT_ME_JU","marketing_agree":"0","web_push_noti_type":"1","email":"grandtempler@naver.com"},"ptDevice":"","config":[]}
+2019-02-13 10:19:10.422 9138-9177/com.mom.piggy E/MOAAPI: userName=윤희철
+
+
+
+----------------
+D/Activity_MoimWrite: uri : content://com.android.providers.downloads.documents/document/5406
+D/Activity_MoimWrite: getPath, isDownloadsDocument
+    id : 5406
+D/AndroidRuntime: Shutting down VM
+E/AndroidRuntime: FATAL EXCEPTION: main
+    Process: com.mom.piggy, PID: 11827
+    java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=301, result=-1, data=Intent { dat=content://com.android.providers.downloads.documents/document/5406 flg=0x1 }} to activity {com.mom.piggy/com.mom.piggy.activity.Activity_MoimWrite}: java.lang.ArrayIndexOutOfBoundsException: length=1; index=1
+        at android.app.ActivityThread.deliverResults(ActivityThread.java:4491)
+        at android.app.ActivityThread.handleSendResult(ActivityThread.java:4534)
+        at android.app.ActivityThread.-wrap20(Unknown Source:0)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1752)
+        at android.os.Handler.dispatchMessage(Handler.java:105)
+        at android.os.Looper.loop(Looper.java:164)
+        at android.app.ActivityThread.main(ActivityThread.java:6940)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:327)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1374)
+     Caused by: java.lang.ArrayIndexOutOfBoundsException: length=1; index=1
+        at com.mom.piggy.activity.Activity_MoimWrite.getPath(Activity_MoimWrite.java:1475)
+        at com.mom.piggy.activity.Activity_MoimWrite.onActivityResult(Activity_MoimWrite.java:1320)
+        at android.app.Activity.dispatchActivityResult(Activity.java:7556)
+        at android.app.ActivityThread.deliverResults(ActivityThread.java:4487)
+        at android.app.ActivityThread.handleSendResult(ActivityThread.java:4534) 
+        at android.app.ActivityThread.-wrap20(Unknown Source:0) 
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1752) 
+        at android.os.Handler.dispatchMessage(Handler.java:105) 
+        at android.os.Looper.loop(Looper.java:164) 
+        at android.app.ActivityThread.main(ActivityThread.java:6940) 
+        at java.lang.reflect.Method.invoke(Native Method) 
+        at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:327) 
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1374) 
+
+
+ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ
+다시 들어갈떄 baseview가 없는현상
+2019-02-14 15:28:23.216 11763-11763/? I/zygote: Late-enabling -Xcheck:jni
+2019-02-14 15:28:23.394 11763-11763/com.mom.piggy I/MultiDex: VM with version 2.1.0 has multidex support
+2019-02-14 15:28:23.394 11763-11763/com.mom.piggy I/MultiDex: install
+2019-02-14 15:28:23.394 11763-11763/com.mom.piggy I/MultiDex: VM has multidex support, MultiDex support library is disabled.
+2019-02-14 15:28:23.403 11763-11763/com.mom.piggy I/FirebaseInitProvider: FirebaseApp initialization unsuccessful
+2019-02-14 15:28:23.408 11763-11763/com.mom.piggy D/PiggyMomApplication: com.android.internal.os.RuntimeInit$KillApplicationHandler@e981b0e
+2019-02-14 15:28:23.439 11763-11763/com.mom.piggy D/메인App: HMSmartActivity constructor
+2019-02-14 15:28:23.467 11763-11763/com.mom.piggy I/PiggyMomApplication: HMMessengerActivity onCreated
+2019-02-14 15:28:23.634 11763-11763/com.mom.piggy E/Fragment_MoimTab4_Setup: onCreate
+2019-02-14 15:28:23.636 11763-11763/com.mom.piggy D/HMMessenger: packageName : com.mom.piggy
+2019-02-14 15:28:23.661 11763-11763/com.mom.piggy D/빌드버전: 유저인포값 : 1
+2019-02-14 15:28:23.667 11763-11763/com.mom.piggy D/메인App:  끝 true
+2019-02-14 15:28:23.675 11763-11763/com.mom.piggy D/PiggyMomApplication: activity Started : com.lib.shi.messenger.HMMessengerActivity
+2019-02-14 15:28:23.676 11763-11763/com.mom.piggy D/Fragment_Main: onCreateView()
+2019-02-14 15:28:23.679 11763-11786/com.mom.piggy D/PiggyMomInstanceIDListenerService: BEFORE fopHzkbSapA:APA91bFvP1eiQKIZhnoQ9BAAn7z96a0PpCRjg74x8VQkpelVPUWCASv46b_BeSc1KFeWk0Ybfp7J99_ndQ95cy9DzvQ0CZPzNB96vvkKQcV4ZRer1nnZzaAsYAZBvbUGdzIAZbKzHaAq
+2019-02-14 15:28:23.849 11763-11763/com.mom.piggy D/Fragment_Main: onActivityCreate()
+2019-02-14 15:28:23.850 11763-11763/com.mom.piggy D/Fragment_Main: setStart()
+2019-02-14 15:28:23.859 11763-11763/com.mom.piggy E/AVEAPP: Fragment_Main onCreate
+2019-02-14 15:28:23.864 11763-11763/com.mom.piggy D/Fragment_Main: initMain()
+2019-02-14 15:28:23.868 11763-11763/com.mom.piggy I/MOAAPI: create MOAClient
+2019-02-14 15:28:23.889 11763-11763/com.mom.piggy D/Fragment_Main: 버스모아 : null
+2019-02-14 15:28:23.890 11763-11763/com.mom.piggy D/onActivityCreate: 재시작
+2019-02-14 15:28:23.891 11763-11763/com.mom.piggy W/System.err: java.lang.NullPointerException: Attempt to invoke virtual method 'android.view.View com.lib.shi.common.baseintrf.BaseActivity.getBaseView()' on a null object reference
+2019-02-14 15:28:23.891 11763-11763/com.mom.piggy W/System.err:     at com.mom.piggy.fragment.Fragment_Main.setStart(Fragment_Main.java:254)
+2019-02-14 15:28:23.892 11763-11763/com.mom.piggy W/System.err:     at com.mom.piggy.fragment.Fragment_Main.onActivityCreated(Fragment_Main.java:215)
+2019-02-14 15:28:23.892 11763-11763/com.mom.piggy W/System.err:     at android.support.v4.app.Fragment.performActivityCreated(Fragment.java:2363)
+2019-02-14 15:28:23.892 11763-11763/com.mom.piggy W/System.err:     at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1442)
+2019-02-14 15:28:23.893 11763-11763/com.mom.piggy W/System.err:     at android.support.v4.app.FragmentManagerImpl.moveFragmentToExpectedState(FragmentManager.java:1740)
+2019-02-14 15:28:23.893 11763-11763/com.mom.piggy W/System.err:     at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1809)
+2019-02-14 15:28:23.893 11763-11763/com.mom.piggy W/System.err:     at android.support.v4.app.FragmentManagerImpl.dispatchStateChange(FragmentManager.java:3217)
+2019-02-14 15:28:23.893 11763-11763/com.mom.piggy W/System.err:     at android.support.v4.app.FragmentManagerImpl.dispatchActivityCreated(FragmentManager.java:3171)
+2019-02-14 15:28:23.894 11763-11763/com.mom.piggy W/System.err:     at android.support.v4.app.FragmentController.dispatchActivityCreated(FragmentController.java:192)
+2019-02-14 15:28:23.894 11763-11763/com.mom.piggy W/System.err:     at android.support.v4.app.FragmentActivity.onStart(FragmentActivity.java:560)
+2019-02-14 15:28:23.894 11763-11763/com.mom.piggy W/System.err:     at com.lib.shi.messenger.HMMessengerActivity.onStart(HMMessengerActivity.java:819)
+2019-02-14 15:28:23.895 11763-11763/com.mom.piggy W/System.err:     at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1335)
+2019-02-14 15:28:23.895 11763-11763/com.mom.piggy W/System.err:     at android.app.Activity.performStart(Activity.java:7048)
+2019-02-14 15:28:23.895 11763-11763/com.mom.piggy W/System.err:     at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2818)
+2019-02-14 15:28:23.895 11763-11763/com.mom.piggy W/System.err:     at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2933)
+2019-02-14 15:28:23.896 11763-11763/com.mom.piggy W/System.err:     at android.app.ActivityThread.-wrap11(Unknown Source:0)
+2019-02-14 15:28:23.896 11763-11763/com.mom.piggy W/System.err:     at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1627)
+2019-02-14 15:28:23.896 11763-11763/com.mom.piggy W/System.err:     at android.os.Handler.dispatchMessage(Handler.java:106)
+2019-02-14 15:28:23.897 11763-11763/com.mom.piggy W/System.err:     at android.os.Looper.loop(Looper.java:175)
+2019-02-14 15:28:23.897 11763-11763/com.mom.piggy W/System.err:     at android.app.ActivityThread.main(ActivityThread.java:6722)
+2019-02-14 15:28:23.897 11763-11763/com.mom.piggy W/System.err:     at java.lang.reflect.Method.invoke(Native Method)
+2019-02-14 15:28:23.898 11763-11763/com.mom.piggy W/System.err:     at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+2019-02-14 15:28:23.898 11763-11763/com.mom.piggy W/System.err:     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:810)
+2019-02-14 15:28:23.898 11763-11763/com.mom.piggy D/Fragment_Main: setStart()
+2019-02-14 15:28:23.898 11763-11763/com.mom.piggy E/AVEAPP: Fragment_Main onCreate
+2019-02-14 15:28:23.900 11763-11763/com.mom.piggy D/Fragment_Main: initMain()
+2019-02-14 15:28:23.909 11763-11763/com.mom.piggy D/Fragment_Main: 버스모아 : null
+2019-02-14 15:28:23.910 11763-11763/com.mom.piggy D/AndroidRuntime: Shutting down VM
+2019-02-14 15:28:23.919 11763-11763/com.mom.piggy E/AndroidRuntime: FATAL EXCEPTION: main
+    Process: com.mom.piggy, PID: 11763
+    java.lang.RuntimeException: Unable to start activity ComponentInfo{com.mom.piggy/com.lib.shi.messenger.HMMessengerActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'android.view.View com.lib.shi.common.baseintrf.BaseActivity.getBaseView()' on a null object reference
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2855)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2933)
+        at android.app.ActivityThread.-wrap11(Unknown Source:0)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1627)
+        at android.os.Handler.dispatchMessage(Handler.java:106)
+        at android.os.Looper.loop(Looper.java:175)
+        at android.app.ActivityThread.main(ActivityThread.java:6722)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:810)
+     Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'android.view.View com.lib.shi.common.baseintrf.BaseActivity.getBaseView()' on a null object reference
+        at com.mom.piggy.fragment.Fragment_Main.setStart(Fragment_Main.java:254)
+        at com.mom.piggy.fragment.Fragment_Main.onActivityCreated(Fragment_Main.java:219)
+        at android.support.v4.app.Fragment.performActivityCreated(Fragment.java:2363)
+        at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1442)
+        at android.support.v4.app.FragmentManagerImpl.moveFragmentToExpectedState(FragmentManager.java:1740)
+        at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1809)
+        at android.support.v4.app.FragmentManagerImpl.dispatchStateChange(FragmentManager.java:3217)
+        at android.support.v4.app.FragmentManagerImpl.dispatchActivityCreated(FragmentManager.java:3171)
+        at android.support.v4.app.FragmentController.dispatchActivityCreated(FragmentController.java:192)
+        at android.support.v4.app.FragmentActivity.onStart(FragmentActivity.java:560)
+        at com.lib.shi.messenger.HMMessengerActivity.onStart(HMMessengerActivity.java:819)
+        at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1335)
+        at android.app.Activity.performStart(Activity.java:7048)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2818)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2933) 
+        at android.app.ActivityThread.-wrap11(Unknown Source:0) 
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1627) 
+        at android.os.Handler.dispatchMessage(Handler.java:106) 
+        at android.os.Looper.loop(Looper.java:175) 
+        at android.app.ActivityThread.main(ActivityThread.java:6722) 
+        at java.lang.reflect.Method.invoke(Native Method) 
+        at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438) 
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:810) 
+2019-02-14 15:28:23.919 11763-11763/com.mom.piggy D/PiggyMomApplication: CRASH !! , e.message : Unable to start activity ComponentInfo{com.mom.piggy/com.lib.shi.messenger.HMMessengerActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'android.view.View com.lib.shi.common.baseintrf.BaseActivity.getBaseView()' on a null object reference
+2019-02-14 15:28:28.391 11763-11771/? I/zygote: Debugger is no longer active
+
+
+---------------------------------
+
+    --------- beginning of crash
+2019-02-14 17:11:25.595 14578-14578/com.mom.piggy E/AndroidRuntime: FATAL EXCEPTION: main
+    Process: com.mom.piggy, PID: 14578
+    java.lang.RuntimeException: Unable to stop activity {com.mom.piggy/com.mom.piggy.activity.Activity_ChatRoom}: java.lang.NullPointerException: Attempt to invoke interface method 'java.util.Iterator java.util.List.iterator()' on a null object reference
+        at android.app.ActivityThread.performStopActivityInner(ActivityThread.java:4161)
+        at android.app.ActivityThread.handleStopActivity(ActivityThread.java:4210)
+        at android.app.ActivityThread.-wrap24(Unknown Source:0)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1646)
+        at android.os.Handler.dispatchMessage(Handler.java:105)
+        at android.os.Looper.loop(Looper.java:164)
+        at android.app.ActivityThread.main(ActivityThread.java:6710)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:770)
+     Caused by: java.lang.NullPointerException: Attempt to invoke interface method 'java.util.Iterator java.util.List.iterator()' on a null object reference
+        at com.mom.piggy.PiggyMomApplication.isForegroundApp(PiggyMomApplication.java:153)
+        at com.mom.piggy.PiggyMomApplication$AppLifeCycleManager.onActivityStopped(PiggyMomApplication.java:133)
+        at android.app.Application.dispatchActivityStopped(Application.java:237)
+        at android.app.Activity.onStop(Activity.java:1861)
+        at android.support.v4.app.FragmentActivity.onStop(FragmentActivity.java:579)
+        at com.mom.piggy.activity.Activity_ChatRoom.onStop(Activity_ChatRoom.java:597)
+        at android.app.Instrumentation.callActivityOnStop(Instrumentation.java:1375)
+        at android.app.Activity.performStop(Activity.java:7155)
+        at android.app.ActivityThread.performStopActivityInner(ActivityThread.java:4158)
+        at android.app.ActivityThread.handleStopActivity(ActivityThread.java:4210) 
+        at android.app.ActivityThread.-wrap24(Unknown Source:0) 
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1646) 
+        at android.os.Handler.dispatchMessage(Handler.java:105) 
+        at android.os.Looper.loop(Looper.java:164) 
+        at android.app.ActivityThread.main(ActivityThread.java:6710) 
+        at java.lang.reflect.Method.invoke(Native Method) 
+        at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240) 
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:770) 
+2019-02-14 17:11:25.595 14578-14578/com.mom.piggy D/PiggyMomApplication: CRASH !! , e.message : Unable to stop activity {com.mom.piggy/com.mom.piggy.activity.Activity_ChatRoom}: java.lang.NullPointerException: Attempt to invoke interface method 'java.util.Iterator java.util.List.iterator()' on a null object reference
+2019-02-14 17:11:25.741 14578-14589/? I/zygote: Debugger is no longer active
+2019-02-14 17:11:31.409 14578-14713/? V/MOAAPI: read, data=ptGroup=0x00000000, ptCommand=0x00000002
+
+
+
+
+
+
+기업,국민,우리
+
+
+하나,삼성,신한
